@@ -1,15 +1,16 @@
 var BasicCard = function(front,back) {
     this.front = front;
     this.back = back;
-    this.create = function() {
-        var question = {
-            front: this.front;
-            back: this.back;
-        };
-    }
 };
 
-var newCard = new BasicCard('Who was the first president of the USA?`, 'George Washington');
-newCard.create();
+var firstPresident = new BasicCard(
+    "Who was the first president of the United States?", "George Washington");
+
+// "Who was the first president of the United States?"
+console.log(firstPresident.front); 
+
+// "George Washington"
+console.log(firstPresident.back); 
+
 
 module.exports = BasicCard;
